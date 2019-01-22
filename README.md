@@ -1,0 +1,1 @@
+# bieszczady-slider
