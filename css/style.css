@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EDB579;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: "Nunito";
+    font-size: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 700px;
+    position: relative;
+}
+
+.header__text {
+    font-family: "Gloria Hallelujah";
+    font-size: 4rem;
+    font-weight: normal;
+    color: #59484F;
+}
+
+.slider {
+    width: 100%;
+    background-color: #2b2f3a;
+}
+
+.slider__list {
+    list-style: none;
+    line-height: 0;
+}
+
+.slider__item {
+    background-color: white;
+    display: none;
+    margin-bottom: 30px;
+}
+
+.slider__info {
+    line-height: normal;
+    color: #CC5543;
+    overflow: hidden;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.slider__title {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.slider__text {
+    font-size: 1.7rem;
+}
+
+.visible {
+    display: block;
+}
+
+.show-info {
+    opacity: 1;
+    max-height: 1000px;
+    padding-bottom: 60px;
+}
+
+.slider__nav {
+    position: absolute;
+    top: 100px;
+    height: 300px;
+    width: 80px;
+    border: none;
+    background-color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+.slider__nav:hover {
+    opacity: 1;
+}
+
+#nextPicture {
+    right: -13%;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+#prevPicture {
+    left: -13%;
+    clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+.slider__info-hide {
+    margin: 10px 0 10px 535px;
+    border: solid 1px #CC5543;
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 50vh;
+    font-size: 1.7rem;
+    color: #CC5543;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.slider__info-hide:hover {
+    background-color: #CC5543;
+    color: white;
+}
+
+.intro__container {
+    color: #59484F;
+    margin-bottom: 30px;
+}
+
+.intro__header {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.intro__text {
+    font-size: 1.7rem;
+}
